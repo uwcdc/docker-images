@@ -24,7 +24,7 @@ jobs:
       strategy:
         fail-fast: false
         matrix:
-          IMAGE: [cv,data_science,media,ml_pytorch,ml_tensorflow]
+          IMAGE: [cv,data-science,media,ml-pytorch,ml-tensorflow]
       steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
