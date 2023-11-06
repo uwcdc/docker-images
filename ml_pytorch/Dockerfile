@@ -5,5 +5,5 @@
 # https://github.com/pangeo-data/pangeo-docker-images/blob/master/base-image/Dockerfile
 
 # This is a courtesy of the Pangeo project: A community effort for big data geoscience
-ARG PANGEO_ML_IMAGE_TAG=master
-FROM pangeo/ml-notebook:${PANGEO_ML_IMAGE_TAG}
+ARG PANGEO_PT_IMAGE_TAG=master
+FROM pangeo/pytorch-notebook:${PANGEO_PT_IMAGE_TAG}
