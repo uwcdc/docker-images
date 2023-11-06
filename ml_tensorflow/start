@@ -1,0 +1,12 @@
+#!/bin/bash -l
+
+# ==== ONLY EDIT WITHIN THIS BLOCK =====
+
+export UWCDC_ENV="ml-tensorflow"
+if ! [[ -z "${UWCDC_SCRATCH_PREFIX}" ]] && ! [[ -z "${JUPYTERHUB_USER}" ]]; then
+    export UWCDC_SCRATCH="${UWCDC_SCRATCH_PREFIX}/${JUPYTERHUB_USER}/"
+fi
+
+# ==== ONLY EDIT WITHIN THIS BLOCK =====
+
+exec "$@"
