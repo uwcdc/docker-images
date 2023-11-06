@@ -5,11 +5,5 @@
 # https://github.com/pangeo-data/pangeo-docker-images/blob/master/base-image/Dockerfile
 
 # This is a courtesy of the Pangeo project: A community effort for big data geoscience
-ARG PANGEO_BASE_IMAGE_TAG=master
-FROM pangeo/base-image:${PANGEO_BASE_IMAGE_TAG}
-
-# Required for nvidia drivers to work inside the image on GKE
-# No-ops on other platforms - Azure doesn't need these set.
-# Shouldn't negatively affect anyone, and makes life easier on GKE.
-ENV PATH=${PATH}:/usr/local/nvidia/bin
-ENV LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/nvidia/lib64
+ARG PANGEO_ML_IMAGE_TAG=master
+FROM pangeo/ml-notebook:${PANGEO_ML_IMAGE_TAG}
