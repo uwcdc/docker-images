@@ -1,0 +1,26 @@
+name: upc-database
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.11,<3.12
+  - ipykernel
+  - ipywidgets
+  - jupyter
+  - jupyterlab
+  - jupyterlab-git
+  - numpy
+  - pandas
+  - matplotlib
+  - pydantic
+  - sqlmodel
+  - sqlalchemy
+  - requests
+  - beautifulsoup4
+  - scrapy
+  - fake-useragent
+  - opentofu
+  - pytest
+  - conda-lock
+  - pip
